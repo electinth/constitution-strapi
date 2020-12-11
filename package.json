@@ -12,10 +12,13 @@
   "devDependencies": {},
   "dependencies": {
     "bluebird": "^3.7.2",
+    "knex": "^0.21.12",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
+    "sqlite3": "^5.0.0",
     "strapi": "3.3.4",
     "strapi-admin": "3.3.4",
+    "strapi-connector-bookshelf": "^3.3.4",
     "strapi-connector-mongoose": "3.3.4",
     "strapi-plugin-content-manager": "3.3.4",
     "strapi-plugin-content-type-builder": "3.3.4",
