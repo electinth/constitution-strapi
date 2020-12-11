@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/topics/category/:category_id",
+      "handler": "topic.findByCategory",
+      "config": {
+        "policies": ["clean"]
+      }
+    },
+    {
+      "method": "GET",
       "path": "/topics/:id",
       "handler": "topic.findOne",
       "config": {

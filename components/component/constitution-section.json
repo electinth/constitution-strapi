@@ -10,9 +10,6 @@
     "constitution": {
       "type": "string"
     },
-    "sections": {
-      "type": "string"
-    },
     "constitution_id": {
       "type": "enumeration",
       "enum": [
@@ -38,7 +35,7 @@
         "con2560"
       ]
     },
-    "section_list": {
+    "sections": {
       "type": "component",
       "repeatable": true,
       "component": "component.section"

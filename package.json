@@ -11,6 +11,9 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "strapi": "3.3.4",
     "strapi-admin": "3.3.4",
     "strapi-connector-mongoose": "3.3.4",

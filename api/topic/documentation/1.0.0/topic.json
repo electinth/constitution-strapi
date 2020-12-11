@@ -311,6 +311,74 @@
         "parameters": []
       }
     },
+    "/topics/category/{category_id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Topic"
+        ],
+        "parameters": [
+          {
+            "name": "category_id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
     "/topics/{id}": {
       "get": {
         "deprecated": false,
@@ -800,9 +868,6 @@
                 "constitution": {
                   "type": "string"
                 },
-                "sections": {
-                  "type": "string"
-                },
                 "constitution_id": {
                   "type": "string",
                   "enum": [
@@ -828,7 +893,7 @@
                     "con2560"
                   ]
                 },
-                "section_list": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -847,6 +912,9 @@
                 }
               }
             }
+          },
+          "category_id": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -976,9 +1044,6 @@
                 "constitution": {
                   "type": "string"
                 },
-                "sections": {
-                  "type": "string"
-                },
                 "constitution_id": {
                   "type": "string",
                   "enum": [
@@ -1004,7 +1069,7 @@
                     "con2560"
                   ]
                 },
-                "section_list": {
+                "sections": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -1023,6 +1088,9 @@
                 }
               }
             }
+          },
+          "category_id": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
