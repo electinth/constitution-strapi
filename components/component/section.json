@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_component_sections",
+  "info": {
+    "name": "Section",
+    "icon": "grip-lines"
+  },
+  "options": {},
+  "attributes": {
+    "section_id": {
+      "type": "string"
+    }
+  }
+}

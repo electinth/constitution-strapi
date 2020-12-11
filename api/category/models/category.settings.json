@@ -21,10 +21,16 @@
       "regex": "\\#[0-9a-fA-F]{6}"
     },
     "sub_categories": {
-      "collection": "sub-category",
-      "via": "category"
+      "via": "category",
+      "collection": "sub-category"
     },
     "content": {
+      "type": "richtext"
+    },
+    "category_id": {
+      "type": "uid"
+    },
+    "description": {
       "type": "richtext"
     }
   }

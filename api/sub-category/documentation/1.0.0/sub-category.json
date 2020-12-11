@@ -566,6 +566,12 @@
               "content": {
                 "type": "string"
               },
+              "category_id": {
+                "type": "uid"
+              },
+              "description": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -573,6 +579,9 @@
                 "type": "string"
               }
             }
+          },
+          "sub_category_id": {
+            "type": "uid"
           }
         }
       },
@@ -589,6 +598,9 @@
           },
           "category": {
             "type": "string"
+          },
+          "sub_category_id": {
+            "type": "uid"
           },
           "created_by": {
             "type": "string"

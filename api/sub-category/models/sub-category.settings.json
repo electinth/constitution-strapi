@@ -19,8 +19,11 @@
       "type": "richtext"
     },
     "category": {
-      "via": "sub_categories",
-      "model": "category"
+      "model": "category",
+      "via": "sub_categories"
+    },
+    "sub_category_id": {
+      "type": "uid"
     }
   }
 }

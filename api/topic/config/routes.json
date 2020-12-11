@@ -5,7 +5,7 @@
       "path": "/topics",
       "handler": "topic.find",
       "config": {
-        "policies": []
+        "policies": ["clean"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/topics/:id",
       "handler": "topic.findOne",
       "config": {
-        "policies": []
+        "policies": ["clean"]
       }
     },
     {

@@ -678,6 +678,9 @@
               "category": {
                 "type": "string"
               },
+              "sub_category_id": {
+                "type": "uid"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -799,6 +802,48 @@
                 },
                 "sections": {
                   "type": "string"
+                },
+                "constitution_id": {
+                  "type": "string",
+                  "enum": [
+                    "con2475temp",
+                    "con2475",
+                    "con2489",
+                    "con2490",
+                    "con2492",
+                    "con2495",
+                    "con2502",
+                    "con2511",
+                    "con2515",
+                    "con2517",
+                    "con2519",
+                    "con2520",
+                    "con2521",
+                    "con2534temp",
+                    "con2534",
+                    "con2540",
+                    "con2549temp",
+                    "con2550",
+                    "con2557temp",
+                    "con2560"
+                  ]
+                },
+                "section_list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "section_id": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -933,6 +978,48 @@
                 },
                 "sections": {
                   "type": "string"
+                },
+                "constitution_id": {
+                  "type": "string",
+                  "enum": [
+                    "con2475temp",
+                    "con2475",
+                    "con2489",
+                    "con2490",
+                    "con2492",
+                    "con2495",
+                    "con2502",
+                    "con2511",
+                    "con2515",
+                    "con2517",
+                    "con2519",
+                    "con2520",
+                    "con2521",
+                    "con2534temp",
+                    "con2534",
+                    "con2540",
+                    "con2549temp",
+                    "con2550",
+                    "con2557temp",
+                    "con2560"
+                  ]
+                },
+                "section_list": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "section_id": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }
