@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "constitution": {
-      "type": "string"
-    },
     "constitution_id": {
       "type": "enumeration",
       "enum": [

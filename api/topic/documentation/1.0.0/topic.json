@@ -865,9 +865,6 @@
                 "id": {
                   "type": "string"
                 },
-                "constitution": {
-                  "type": "string"
-                },
                 "constitution_id": {
                   "type": "string",
                   "enum": [
@@ -912,9 +909,6 @@
                 }
               }
             }
-          },
-          "category_id": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -1041,9 +1035,6 @@
                 "id": {
                   "type": "string"
                 },
-                "constitution": {
-                  "type": "string"
-                },
                 "constitution_id": {
                   "type": "string",
                   "enum": [
@@ -1088,9 +1079,6 @@
                 }
               }
             }
-          },
-          "category_id": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

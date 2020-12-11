@@ -48,9 +48,6 @@
       "type": "component",
       "repeatable": true,
       "component": "component.constitution-section"
-    },
-    "category_id": {
-      "type": "string"
     }
   }
 }
