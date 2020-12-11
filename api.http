@@ -1,0 +1,38 @@
+# This is a sample call to ELECT Constitution Change API
+# Learn more about REST Client vscode extension at https://github.com/Huachao/vscode-restclient
+
+# @host = http://localhost:1337
+# @api_token = enter strapi api token
+
+### 1. List all topics
+
+# @name allTopics
+GET {{host}}/topics
+Accept: application/json
+Authorization: Bearer {{api_token}}
+
+### 2. List topics by category ID
+
+# @name filterTopicsByCategory
+GET {{host}}/topics/category/8
+Accept: application/json
+Authorization: Bearer {{api_token}}
+
+### 3. Get the first topic from previous request (2.)
+
+@topic_id = {{filterTopicsByCategory.response.body.$.0.id}}
+
+# @name getTopicById
+GET {{host}}/topics/{{topic_id}}
+Accept: application/json
+Authorization: Bearer {{api_token}}
+
+### 4. Get single topic by ID
+
+# Set topic ID that you want to get
+# @topic_id = 5fd30e11a710e7301331c6d4
+
+# @name getTopicById
+GET {{host}}/topics/{{topic_id}}
+Accept: application/json
+Authorization: Bearer {{api_token}}
