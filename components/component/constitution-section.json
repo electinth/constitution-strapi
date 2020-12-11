@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_component_constitution_sections",
+  "info": {
+    "name": "ConstitutionSection",
+    "icon": "newspaper"
+  },
+  "options": {},
+  "attributes": {
+    "constitution": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "string"
+    }
+  }
+}

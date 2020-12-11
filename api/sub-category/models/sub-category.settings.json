@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_categories",
+  "info": {
+    "name": "Sub Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "category": {
+      "via": "sub_categories",
+      "model": "category"
+    }
+  }
+}

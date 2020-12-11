@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "default": "#00ccff",
+      "regex": "\\#[0-9a-fA-F]{6}"
+    },
+    "sub_categories": {
+      "collection": "sub-category",
+      "via": "category"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

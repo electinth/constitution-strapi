@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_component_opinions",
+  "info": {
+    "name": "Opinion",
+    "icon": "comment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "speaker_name": {
+      "type": "string"
+    },
+    "speaker_position": {
+      "type": "string"
+    },
+    "speaker_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
