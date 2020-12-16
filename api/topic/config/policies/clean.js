@@ -93,7 +93,7 @@ async function parseDocRecursive(doc, ctx, ...options) {
     if (!image) return;
     // flatten sizes
     ["thumbnail", "large", "medium", "small"].forEach(size => {
-      if (!image.formats[size]) return;
+      if (!_.get(image, `formats.${size}`)) return;
       doc[`${key}_${size}`] = `${protocol}://${ctx.request.header.host}${image.formats[size].url}`
     })
     // flatten normal size
