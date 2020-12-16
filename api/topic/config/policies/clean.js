@@ -38,8 +38,8 @@ async function handleSubCategory(doc) {
   doc.category_name = cat ? cat.name: "?";
   doc.category_color = cat ? cat.color : "#000000";
 
-  doc.subcategory_id = doc.sub_category.id;
-  doc.subcategory_code = doc.sub_category.sub_category_id;
+  doc.subcategory_id = doc.sub_category.sub_category_id;
+  // doc.subcategory_code = doc.sub_category.sub_category_id;
   doc.subcategory_name = doc.sub_category.name;
 
   delete doc.sub_category;
