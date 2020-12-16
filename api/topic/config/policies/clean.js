@@ -7,8 +7,7 @@
 const _ = require('lodash');
 const Promise = require('bluebird');
 
-// mock data
-const mock_con_data = require('../../../../mock_constitutions.json');
+const constitution_data = require('../../../../data/constitutions.json');
 
 
 // @see https://stackoverflow.com/a/57227253/1490261
@@ -36,7 +35,7 @@ async function handleSubCategory(doc) {
 
 async function handleConstitutions(doc) {
   doc.constitutions = _.compact(doc.constitutions.map(c => {
-    const con = _.find(mock_con_data, ['id', c.constitution_id]);
+    const con = _.find(constitution_data, ['id', c.constitution_id]);
     if (!con) return null;
 
     const sections = _.compact(c.sections.map(s => s.section_id.trim()));
@@ -50,10 +49,10 @@ async function handleConstitutions(doc) {
         return {
           id: section.id,
           content: section.content,
-          chapter_id: section.chapterId,
-          chapter_name: section.chapterName,
-          part_id: section.partId,
-          part_name: section.partName
+          chapter_id: section.chapter_id,
+          chapter_name: section.chapter_name,
+          part_id: section.part_id,
+          part_name: section.part_name
         };
       }))
     }
