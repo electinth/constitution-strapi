@@ -20,6 +20,18 @@ function isPureObject(input) {
 }
 
 async function handleSubCategory(doc) {
+  if (!doc.sub_category) {
+    doc.category_id = '';
+    doc.category_name = '';
+    doc.category_color = '';
+
+    doc.subcategory_id = '';
+    doc.subcategory_code = '';
+    doc.subcategory_name = '';
+
+    return;
+  }
+
   const cat = await strapi.query('category').findOne({ id: doc.sub_category.category });
 
   doc.category_id = cat ? cat.category_id : "?";
