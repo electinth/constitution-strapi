@@ -1,6 +1,8 @@
 # This is a sample call to ELECT Constitution Change API
-# Learn more about REST Client vscode extension at https://github.com/Huachao/vscode-restclient
+# Learn more about REST Client VS Code extension at https://github.com/Huachao/vscode-restclient
 
+# Uncomment below to set host and api token.
+# Or you can set it in VS Code settings.
 # @host = http://localhost:1337
 # @api_token = enter strapi api token
 

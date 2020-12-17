@@ -9,6 +9,8 @@ We're using [REST Client](https://github.com/Huachao/vscode-restclient) to test 
 
 After install the extension, open `api.http` file and press "Send Request" on top of each pre-defeined requests. You need to set `@host` and `@api_token` in order to authenticate the request with Strapi. See **Endpoints** below for possible `@host`. `@api_token` is from **Strapi admin > Documentation > JWT Token**.
 
+![Sample API](sample_api_http.png)
+
 ### Endpoints
 
 - Staging: https://cms.constitution.kickdown.dev
