@@ -2,12 +2,25 @@
 
 A quick description of your strapi application
 
-## API Documentation
+## Documentation
 
 We're using [REST Client](https://github.com/Huachao/vscode-restclient) to test API request.
 **REST Client** is a VSCode extension to conveniently send and test REST request within the editor.
 
-After install the extension, open `api.http` file and press "Send Request" on top of each pre-defeined requests. You need to set `@host` and `@api_token` in order to authenticate the request with Strapi.
+After install the extension, open `api.http` file and press "Send Request" on top of each pre-defeined requests. You need to set `@host` and `@api_token` in order to authenticate the request with Strapi. See **Endpoints** below for possible `@host`. `@api_token` is from **Strapi admin > Documentation > JWT Token**.
+
+### Endpoints
+
+- Staging: https://cms.constitution.kickdown.dev
+- Production: TBA
+
+### API
+
+| Task | API |
+| -- | -- |
+| 1. List all topics | `GET /topics` |
+| 2. List topics by category ID | `GET /topics/category/:category_id` |
+| 3. Get single topic by ID | `GET /topics` |
 
 ## Deployment
 
