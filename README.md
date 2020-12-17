@@ -1,4 +1,4 @@
-# Strapi application
+# ELECT Constitution CMS & API
 
 A quick description of your strapi application
 
@@ -26,7 +26,7 @@ After install the extension, open `api.http` file and press "Send Request" on to
 
 On project directory, build once for production
 
-``bash
+```bash
 npm i
 NODE_ENV=production npm run build
 ```
