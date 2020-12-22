@@ -130,7 +130,7 @@ async function parseDoc(doc, ctx, ...options) {
 }
 
 module.exports = async (ctx, next) => {
-  console.log("clean policy");
+  // console.log("clean policy");
 
   await next();
 
