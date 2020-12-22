@@ -116,6 +116,9 @@ async function parseDocRecursive(doc, ctx, ...options) {
 }
 
 async function parseDoc(doc, ctx, ...options) {
+  // Convert topic ID from number to string
+  doc.id = String(doc.id);
+
   // Populate category from sub category
   await handleSubCategory(doc);
   // Populate constitution's section details
