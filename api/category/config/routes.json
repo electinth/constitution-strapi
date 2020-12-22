@@ -5,7 +5,7 @@
       "path": "/categories",
       "handler": "category.find",
       "config": {
-        "policies": []
+        "policies": ["populateTopics"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/categories/:id",
       "handler": "category.findOne",
       "config": {
-        "policies": []
+        "policies": ["populateTopics"]
       }
     },
     {
