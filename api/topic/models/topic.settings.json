@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "image": {
+    "og_image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

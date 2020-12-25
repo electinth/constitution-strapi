@@ -23,7 +23,8 @@
       "via": "sub_categories"
     },
     "sub_category_id": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
