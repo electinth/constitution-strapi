@@ -7,8 +7,23 @@
 const _ = require('lodash');
 const Promise = require('bluebird');
 
-const constitution_data = require('../../../../data/constitutions.json');
+const constitution_raw = require('../../../../data/constitutions.json');
 
+// normalize "chapters" and "sections" from raw data
+let con_by_id = _.groupBy(constitution_raw, 'id');
+const constitution_data = _.values(_.mapValues(con_by_id, (cons, id) => {
+  const main = cons[0];
+
+  const chapter_by_id = _.groupBy(_.flatten(cons.map(c => c.chapters)), 'id');
+  main.chapters = _.values(_.mapValues(chapter_by_id, (chapters, id) => {
+    const main_chapter = chapters[0];
+    main_chapter.parts = _.uniqBy(_.flatten(chapters.map(c => c.parts)), 'id');
+    return main_chapter;
+  }));
+
+  main.sections = _.uniqBy(_.flatten(cons.map(c => c.sections)), 'id');
+  return main;
+}));
 
 // @see https://stackoverflow.com/a/57227253/1490261
 function isPureObject(input) {
