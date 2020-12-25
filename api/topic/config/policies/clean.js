@@ -103,7 +103,7 @@ async function parseDocRecursive(doc, ctx, ...options) {
 
   // Normalize Strappi media (image) fields
   const protocol = ctx.req.connection.encrypted ? 'https' : 'http';
-  ["image", "thumbnail_image", "speaker_image"].forEach(key => {
+  ["image", "thumbnail_image", "speaker_image", "og_image"].forEach(key => {
     const image = doc[key];
     if (!image) return;
     // flatten sizes
