@@ -56,7 +56,7 @@ async function handleConstitutions(doc) {
       name: con.name,
       prelude: con.prelude,
       sections: _.compact(sections.map(section_id => {
-        const section = _.find(con.sections, ['id', Number(section_id)]);
+        const section = _.find(con.sections, ['id', String(section_id)]);
         if (!section) return null;
         return {
           id: section.id,
