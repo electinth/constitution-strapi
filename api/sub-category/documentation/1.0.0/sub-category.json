@@ -569,7 +569,7 @@
               "category_id": {
                 "type": "uid"
               },
-              "description": {
+              "og_image": {
                 "type": "string"
               },
               "created_by": {
