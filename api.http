@@ -5,8 +5,6 @@
 # Or you can set it in VS Code settings.
 # @host = http://localhost:1337
 # @api_token = enter strapi api token
-@host = https://cms.constitution.kickdown.dev
-@api_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjA4MTkxMjU4LCJleHAiOjE2MTA3ODMyNTh9.93ESRULcbrhV9fmOcYobd4XuZ73R1GvrzYukL4XZxqI
 
 ### 1. Get categories by slug ID
 
