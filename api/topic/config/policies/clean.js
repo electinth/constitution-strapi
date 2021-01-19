@@ -102,7 +102,9 @@ async function parseDocRecursive(doc, ctx, ...options) {
   ].forEach(key => delete doc[key]);
 
   // Normalize Strappi media (image) fields
-  const protocol = ctx.req.connection.encrypted ? 'https' : 'http';
+  const protocol = (
+    ctx.req.connection.encrypted || ctx.req.headers['x-forwarded-proto'] === 'https'
+  ) ? 'https' : 'http';
   ["image", "thumbnail_image", "speaker_image", "og_image"].forEach(key => {
     const image = doc[key];
     if (!image) return;
