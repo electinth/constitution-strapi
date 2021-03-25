@@ -138,8 +138,10 @@ async function parseDoc(doc, ctx, ...options) {
 
   // Populate category from sub category
   await handleSubCategory(doc);
+
+  // NOTE: constitution data will be handled during frontend build instead
   // Populate constitution's section details
-  await handleConstitutions(doc);
+  // await handleConstitutions(doc);
 
   await parseDocRecursive(doc, ctx, ...options);
 
