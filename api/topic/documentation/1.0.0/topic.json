@@ -591,6 +591,9 @@
           "id": {
             "type": "string"
           },
+          "topic_id": {
+            "type": "uid"
+          },
           "name": {
             "type": "string"
           },
@@ -920,6 +923,9 @@
           "name"
         ],
         "properties": {
+          "topic_id": {
+            "type": "uid"
+          },
           "name": {
             "type": "string"
           },

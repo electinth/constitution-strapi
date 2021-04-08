@@ -11,6 +11,9 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "topic_id": {
+      "type": "uid"
+    },
     "name": {
       "type": "string",
       "required": true
